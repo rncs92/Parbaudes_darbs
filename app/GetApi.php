@@ -29,14 +29,16 @@ class GetApi
         return $this->currencies;
     }
 
-    public function convert(float $amount, string $toCurrency)
+    public function convert(float $amount, string $toCurrency): ?float
     {
         $this->getValues();
         /** @var Currency $currency */
+        $result = 0;
         foreach($this->currencies as $currency) {
             if($toCurrency == $currency->getId()) {
-                return $amount * $currency->getRate();
+                $result = $amount * $currency->getRate();
             }
         }
+        return $result;
     }
 }
