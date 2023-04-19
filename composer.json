@@ -1,0 +1,19 @@
+{
+    "name": "janis/parbaudes_darbs",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rncs92",
+            "email": "123461096+rncs92@users.noreply.github.com"
+        }
+    ],
+    "require": {
+      "ext-simplexml": "*",
+        "guzzlehttp/guzzle": "^7.5",
+      "ext-readline": "*"
+    }
+}
