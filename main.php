@@ -1,9 +1,6 @@
 <?php
 
 require 'vendor/autoload.php';
-require 'app/GetApi.php';
-require 'app/Currency.php';
-
 use app\GetApi;
 
 $client = new GetApi();
